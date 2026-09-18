@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #19452f;
+    background: #f9fff9;
+}
+
+/* Navbar */
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: white;
+    border-bottom: 1px solid #e5eee7;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #168344;
+    font-size: 26px;
+}
+
+.logo span {
+    color: #f47732;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #38564a;
+    font-size: 14px;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 9px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-btn {
+    border: none;
+    background: transparent;
+    color: #138344;
+}
+
+.signup-btn {
+    border: 1px solid #138344;
+    background: white;
+    color: #138344;
+}
+
+/* Hero */
+.hero {
+    min-height: 520px;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(110deg, #eef9ef, #ffffff);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tagline {
+    color: #15924c;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 18px 0;
+}
+
+.hero h1 span {
+    color: #15924c;
+}
+
+.description {
+    color: #65786d;
+    font-size: 16px;
+    max-width: 500px;
+}
+
+.primary-btn,
+.secondary-btn {
+    border: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.primary-btn {
+    background: #138344;
+    color: white;
+}
+
+.secondary-btn {
+    background: #f47732;
+    color: white;
+    margin-left: 10px;
+}
+
+.hero-image {
+    width: 300px;
+    background: #dff4df;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px #cde5d1;
+}
+
+.food-circle {
+    font-size: 90px;
+}
+
+.hero-image h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+/* Statistics */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 30px 10%;
+    background: white;
+}
+
+.stats h2 {
+    color: #138344;
+    font-size: 28px;
+}
+
+.stats p {
+    color: #718078;
+}
+
+/* Sections */
+.section {
+    padding: 75px 10%;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin: 10px 0 25px;
+}
+
+.section-heading p {
+    color: #718078;
+    max-width: 450px;
+}
+
+/* Form */
+.form-box {
+    max-width: 550px;
+    margin-top: 30px;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e0ebe3;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px #e4eee6;
+}
+
+.form-box h3 {
+    margin-bottom: 20px;
+}
+
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #d7e2da;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#message {
+    color: #138344;
+    margin-top: 10px;
+}
+
+/* Find Food */
+.find-section {
+    background: #f1f9f1;
+}
+
+.search-box {
+    width: 350px;
+    padding: 13px;
+    border: 1px solid #d7e2da;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.food-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e1ebe3;
+}
+
+.food-image {
+    height: 130px;
+    background: #e5f4e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+}
+
+.food-info {
+    padding: 18px;
+}
+
+.food-info h3 {
+    margin: 10px 0;
+}
+
+.food-info p {
+    font-size: 13px;
+    color: #718078;
+}
+
+.request-btn {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border: none;
+    background: #eaf7ed;
+    color: #138344;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dashboard */
+.dashboard {
+    background: #f1f9f1;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #dce9df;
+}
+
+.dashboard-card h3 {
+    font-size: 25px;
+}
+
+.dashboard-card h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* About */
+.about {
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.about-grid div {
+    background: white;
+    padding: 30px;
+    border: 1px solid #e1ebe3;
+    border-radius: 12px;
+}
+
+.about-grid h3 {
+    margin-bottom: 10px;
+}
+
+.about-grid p {
+    color: #718078;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background: #103b28;
+    color: white;
+    padding: 35px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span {
+    color: #f47732;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+
+.modal-content input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+
+    .navbar ul {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .stats,
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .food-grid,
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
