@@ -1,0 +1,101 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #e9d5ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #4f46e5;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #333333;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin: 9px 0;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 5px #a5b4fc;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #555555;
+    font-size: 14px;
+}
+
+#loginMessage,
+#signupMessage {
+    color: red;
+    margin-top: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.profile {
+    background: #f5f3ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    font-size: 45px;
+}
